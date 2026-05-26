@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Specials | Casa Agave Mexican Restaurant</title>
+  <meta name="description" content="Casa Agave's specialty menu featuring the Sunnyway Birria Burrito, Shrimp Agave, Crazy Pollo, and our Molcajetes." />
+  <meta name="theme-color" content="#1f1410" />
+  <link rel="icon" type="image/svg+xml" href="/images/agave-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="/">
+        <img src="/images/agave-icon.svg" alt="" aria-hidden="true" />
+        <span class="nav__brand-text">
+          Casa Agave
+          <small>Mexican Restaurant</small>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="/" data-route="/">Home</a></li>
+        <li><a href="/menu" data-route="/menu">Menu</a></li>
+        <li><a href="/specials" data-route="/specials">Specials</a></li>
+        <li><a href="/story" data-route="/story">Our Story</a></li>
+        <li><a href="/gallery" data-route="/gallery">Gallery</a></li>
+        <li><a class="nav__cta" href="tel:+17175973928">Call (717) 597-3928</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container page-banner__inner">
+        <span class="eyebrow eyebrow--light">Chef's Picks</span>
+        <h1>Specials Menu</h1>
+        <p>House favorites and signature plates you'll only find at Casa Agave.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 820px; margin: 0 auto;">
+
+          <div class="special-card" data-reveal>
+            <div class="special-card__mark" aria-hidden="true">SW</div>
+            <div class="special-card__body">
+              <h3>Sunnyway Birria Burrito</h3>
+              <p>In honor of the Sunnyway Diner. Our house-made stewed birria beef with melted cheese, folded inside a crispy flour tortilla. Served with a side of broth &amp; tomatillo sauce for dipping. <em>Add rice for $2.00.</em></p>
+            </div>
+            <div class="special-card__price">$14.00</div>
+          </div>
+
+          <div class="special-card" data-reveal>
+            <div class="special-card__mark" aria-hidden="true">SA</div>
+            <div class="special-card__body">
+              <h3>Shrimp Agave</h3>
+              <p>Juicy skewered shrimp seated on a bed of vegetables mixed with pineapple, all grilled to perfection. Includes broccoli, onions, peppers, tomatoes, zucchini, squash, and cauliflower. Served with a side of rice.</p>
+            </div>
+            <div class="special-card__price">$19.50</div>
+          </div>
+
+          <div class="special-card" data-reveal>
+            <div class="special-card__mark" aria-hidden="true">CP</div>
+            <div class="special-card__body">
+              <h3>Crazy Pollo</h3>
+              <p>Grilled chicken breast topped with American cheese on a bed of vegetables including peppers, onions, tomatoes, zucchini, squash, broccoli, cauliflower &amp; rice.</p>
+            </div>
+            <div class="special-card__price">$18.00</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2.5rem;">
+          <span class="eyebrow eyebrow--light">Signature Showstopper</span>
+          <h2>Molcajetes</h2>
+          <p style="max-width: 640px; margin: 0 auto; color: rgba(253, 246, 232, 0.78);">
+            A traditional volcanic-stone bowl, served sizzling at your table. Comes with crab,
+            shrimp, tilapia, and scallops with grilled pineapple, topped with cheese. Served with
+            a side of rice and our special mango cajun sauce.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 820px; margin: 0 auto;">
+          <div class="molcajete-card" data-reveal>
+            <div>
+              <h3>Land, Sky &amp; Sea</h3>
+              <p>The classic combination — surf, turf and air, all at once.</p>
+            </div>
+            <div style="font-family: var(--font-display); font-size: 2.4rem; font-weight: 800; color: var(--color-gold);">$25.50</div>
+          </div>
+
+          <div class="molcajete-card" data-reveal style="background: linear-gradient(135deg, var(--color-agave-dark) 0%, var(--color-agave) 100%);">
+            <div>
+              <h3>Tropical</h3>
+              <p>Our tropical twist with extra grilled pineapple and house spices.</p>
+            </div>
+            <div style="font-family: var(--font-display); font-size: 2.4rem; font-weight: 800; color: var(--color-cream);">$26.75</div>
+          </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem; color: rgba(253, 246, 232, 0.65); font-style: italic;">
+          Also available: flavored lemonades — ask your server about today's flavors.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2>Have you tried our specials?</h2>
+          <p>Call ahead — we'll have it ready when you arrive.</p>
+        </div>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a class="btn btn--solid-ink" href="/menu">Browse the Full Menu</a>
+          <a class="btn btn--primary" href="tel:+17175973928">Call (717) 597-3928</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-grid__brand">
+          <img src="/images/logo.svg" alt="Casa Agave" />
+          <p>Family-owned Mexican restaurant in the heart of Greencastle, PA. Mi casa es su casa.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>140 N Antrim Way<br />Greencastle, PA 17225</p>
+          <p><a href="https://maps.google.com/?q=140+N+Antrim+Way,+Greencastle,+PA+17225" target="_blank" rel="noopener">Get Directions</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+17175973928">(717) 597-3928</a></p>
+          <p>Call for take-out orders.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/specials">Specials</a></li>
+            <li><a href="/story">Our Story</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Casa Agave Mexican Restaurant. All rights reserved.</span>
+        <span>Mi casa es su casa.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

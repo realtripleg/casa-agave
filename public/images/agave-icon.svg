@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Casa Agave">
+  <defs>
+    <linearGradient id="iconLeaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ed3b3"/>
+      <stop offset="100%" stop-color="#3a9b7e"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(32 8)" fill="url(#iconLeaf)" stroke="#2a7d63" stroke-width="0.5" stroke-linejoin="round">
+    <!-- Center leaf -->
+    <path d="M0 48 C -3 32, -2 18, 0 0 C 2 18, 3 32, 0 48 Z"/>
+    <!-- Inner leaves -->
+    <path d="M0 48 C -8 36, -10 22, -12 8 C -8 24, -4 38, 0 48 Z"/>
+    <path d="M0 48 C 8 36, 10 22, 12 8 C 8 24, 4 38, 0 48 Z"/>
+    <!-- Mid leaves -->
+    <path d="M0 48 C -16 38, -24 26, -28 12 C -20 30, -10 42, 0 48 Z"/>
+    <path d="M0 48 C 16 38, 24 26, 28 12 C 20 30, 10 42, 0 48 Z"/>
+    <!-- Outer leaves -->
+    <path d="M0 48 C -22 44, -34 38, -42 30 C -28 42, -14 46, 0 48 Z"/>
+    <path d="M0 48 C 22 44, 34 38, 42 30 C 28 42, 14 46, 0 48 Z"/>
+  </g>
+</svg>

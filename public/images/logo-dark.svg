@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" role="img" aria-label="Casa Agave Mexican Restaurant">
+  <defs>
+    <linearGradient id="leafGradD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ec9a8"/>
+      <stop offset="100%" stop-color="#3a9b7e"/>
+    </linearGradient>
+    <linearGradient id="ribbonGradD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4632e"/>
+      <stop offset="100%" stop-color="#b14a1f"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(200 30)" fill="url(#leafGradD)" stroke="#2a7d63" stroke-width="1" stroke-linejoin="round">
+    <path d="M0 130 C -7 85, -5 50, 0 0 C 5 50, 7 85, 0 130 Z"/>
+    <path d="M0 130 C -28 95, -42 70, -55 30 C -38 75, -22 105, 0 130 Z"/>
+    <path d="M0 130 C -50 100, -82 75, -110 50 C -75 95, -38 120, 0 130 Z"/>
+    <path d="M0 130 C -42 115, -78 110, -118 110 C -75 122, -34 128, 0 130 Z"/>
+    <path d="M0 130 C 28 95, 42 70, 55 30 C 38 75, 22 105, 0 130 Z"/>
+    <path d="M0 130 C 50 100, 82 75, 110 50 C 75 95, 38 120, 0 130 Z"/>
+    <path d="M0 130 C 42 115, 78 110, 118 110 C 75 122, 34 128, 0 130 Z"/>
+    <path d="M0 130 C -16 90, -22 55, -28 18 C -16 60, -10 100, 0 130 Z" opacity="0.95"/>
+    <path d="M0 130 C 16 90, 22 55, 28 18 C 16 60, 10 100, 0 130 Z" opacity="0.95"/>
+  </g>
+
+  <text x="200" y="220" text-anchor="middle"
+        font-family="'Playfair Display', 'Times New Roman', Georgia, serif"
+        font-weight="900" font-size="58" fill="#1f1410"
+        letter-spacing="2">CASA AGAVE</text>
+
+  <g transform="translate(200 250)">
+    <path d="M -135 0 L 135 0 L 150 22 L 135 44 L -135 44 L -150 22 Z" fill="url(#ribbonGradD)"/>
+    <path d="M -150 22 L -160 32 L -150 22 Z" fill="#8c3815" opacity="0.55"/>
+    <path d="M 150 22 L 160 32 L 150 22 Z" fill="#8c3815" opacity="0.55"/>
+    <text x="0" y="29" text-anchor="middle"
+          font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif"
+          font-weight="700" font-size="18" fill="#fdf6e8"
+          letter-spacing="4">MEXICAN RESTAURANT</text>
+  </g>
+</svg>

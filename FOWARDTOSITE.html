@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="0; url=http://174.59.35.59:3939" />
+  <title>Redirecting…</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
+        Roboto, system-ui, "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(ellipse 90% 70% at 50% -20%, rgba(240, 200, 105, 0.08), transparent 60%),
+        #0a0a0c;
+      background-attachment: fixed;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(240, 200, 105, 0.2);
+      border-top-color: #f0c869;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1;
+      background: linear-gradient(135deg, #ffd47a 0%, #f0c869 50%, #c99a3a 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 40px rgba(240, 200, 105, 0.3));
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #b8b8c0;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1rem 2.4rem;
+      background: linear-gradient(135deg, #ffd47a, #f0c869);
+      color: #1a1500;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 6px 24px rgba(240, 200, 105, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(240, 200, 105, 0.45);
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spinner { animation: none; }
+    }
+  </style>
+  <script>
+    window.location.replace("http://174.59.35.59:3939");
+  </script>
+</head>
+<body>
+  <div class="spinner"></div>
+  <h1>Redirecting…</h1>
+  <p>Taking you to your destination.</p>
+  <a href="http://174.59.35.59:3939">Continue manually</a>
+</body>
+</html>

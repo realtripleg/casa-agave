@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Casa Agave Mexican Restaurant</title>
+  <meta name="description" content="A look inside Casa Agave Mexican Restaurant — the dishes, the dining room, and the people who make it home." />
+  <meta name="theme-color" content="#1f1410" />
+  <link rel="icon" type="image/svg+xml" href="/images/agave-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="/">
+        <img src="/images/agave-icon.svg" alt="" aria-hidden="true" />
+        <span class="nav__brand-text">
+          Casa Agave
+          <small>Mexican Restaurant</small>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="/" data-route="/">Home</a></li>
+        <li><a href="/menu" data-route="/menu">Menu</a></li>
+        <li><a href="/specials" data-route="/specials">Specials</a></li>
+        <li><a href="/story" data-route="/story">Our Story</a></li>
+        <li><a href="/gallery" data-route="/gallery">Gallery</a></li>
+        <li><a class="nav__cta" href="tel:+17175973928">Call (717) 597-3928</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container page-banner__inner">
+        <span class="eyebrow eyebrow--light">A Closer Look</span>
+        <h1>Gallery</h1>
+        <p>The food, the family, the place we call home.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="gallery-loading" class="gallery-loading">Loading photos</div>
+
+        <div id="gallery-empty" class="gallery-empty" hidden>
+          <h3>Photos coming soon</h3>
+          <p style="margin: 0;">
+            We're still putting this together. Check back soon — or visit us in person.
+          </p>
+        </div>
+
+        <div id="gallery-grid" class="gallery-masonry" hidden></div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <p style="color: var(--color-muted); margin-bottom: 1.5rem;">
+            Want to see more? Hundreds of customer photos live on Google.
+          </p>
+          <a class="btn btn--primary" href="https://www.google.com/search?q=Casa+Agave+Mexican+Restaurant+Greencastle+PA" target="_blank" rel="noopener">See Google Reviews →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2>Want to see it in person?</h2>
+          <p>Come visit us — we're open seven days a week.</p>
+        </div>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a class="btn btn--solid-ink" href="https://maps.google.com/?q=140+N+Antrim+Way,+Greencastle,+PA+17225" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn--primary" href="tel:+17175973928">Call (717) 597-3928</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Close (Esc)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Previous photo (Left arrow)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Next photo (Right arrow)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <figure class="lightbox__stage">
+      <img id="lightbox-img" class="lightbox__img" alt="" />
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+      <span class="lightbox__counter" id="lightbox-counter"></span>
+    </figure>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-grid__brand">
+          <img src="/images/logo.svg" alt="Casa Agave" />
+          <p>Family-owned Mexican restaurant in the heart of Greencastle, PA. Mi casa es su casa.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>140 N Antrim Way<br />Greencastle, PA 17225</p>
+          <p><a href="https://maps.google.com/?q=140+N+Antrim+Way,+Greencastle,+PA+17225" target="_blank" rel="noopener">Get Directions</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+17175973928">(717) 597-3928</a></p>
+          <p>Call for take-out orders.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/specials">Specials</a></li>
+            <li><a href="/story">Our Story</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Casa Agave Mexican Restaurant. All rights reserved.</span>
+        <span>Mi casa es su casa.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/gallery.js" defer></script>
+</body>
+</html>
