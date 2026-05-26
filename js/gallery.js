@@ -15,22 +15,25 @@
   const btnPrev = document.querySelector('.lightbox__prev');
   const btnNext = document.querySelector('.lightbox__next');
 
-  let photos = [];
+  let photos = [
+    { src: '/images/gallery/unnamed.jpg', alt: 'Unnamed' },
+    { src: '/images/gallery/unnamed.png', alt: 'Unnamed' },
+    { src: '/images/gallery/unnamed%20(1).jpg', alt: 'Unnamed (1)' },
+    { src: '/images/gallery/unnamed%20(1).png', alt: 'Unnamed (1)' },
+    { src: '/images/gallery/unnamed%20(2).jpg', alt: 'Unnamed (2)' },
+    { src: '/images/gallery/unnamed%20(2).png', alt: 'Unnamed (2)' },
+    { src: '/images/gallery/unnamed%20(3).jpg', alt: 'Unnamed (3)' },
+    { src: '/images/gallery/unnamed%20(3).png', alt: 'Unnamed (3)' },
+    { src: '/images/gallery/unnamed%20(4).jpg', alt: 'Unnamed (4)' },
+    { src: '/images/gallery/unnamed%20(4).png', alt: 'Unnamed (4)' },
+    { src: '/images/gallery/unnamed%20(5).jpg', alt: 'Unnamed (5)' },
+    { src: '/images/gallery/unnamed%20(5).png', alt: 'Unnamed (5)' },
+    { src: '/images/gallery/unnamed%20(6).jpg', alt: 'Unnamed (6)' },
+    { src: '/images/gallery/unnamed%20(7).jpg', alt: 'Unnamed (7)' },
+  ];
   let activeIndex = 0;
 
-  fetch('/api/gallery', { headers: { Accept: 'application/json' } })
-    .then((res) => {
-      if (!res.ok) throw new Error('Failed to fetch gallery');
-      return res.json();
-    })
-    .then((data) => {
-      photos = Array.isArray(data && data.photos) ? data.photos : [];
-      render();
-    })
-    .catch((err) => {
-      console.error('Gallery fetch failed:', err);
-      if (loading) loading.textContent = "We couldn't load the gallery right now. Try again in a moment.";
-    });
+  render();
 
   function render() {
     if (loading) loading.remove();
